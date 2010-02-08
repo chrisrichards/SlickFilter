@@ -359,7 +359,7 @@ jQuery.SlickFilter = function(parent, options) {
 
 };
 
-jQuery.fn.gridfilter = function(columns, onFilterChange, options) {
+jQuery.fn.SlickFilter = function(columns, onFilterChange, options) {
 	// Make sure options exists
   options = options || {};
   options.columns = columns;
@@ -422,7 +422,7 @@ jQuery.fn.gridfilter = function(columns, onFilterChange, options) {
 
 	this.each(function() {
 	  var parent = $(this);
-	  new jQuery.gridfilter(parent, options);
+	  new jQuery.SlickFilter(parent, options);
 	});
 
 	// Don't break the chain
